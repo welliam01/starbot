@@ -4,7 +4,7 @@ const ms = require("ms");
 const fs = require('fs');
 const sw = JSON.parse(fs.readFileSync(`./setwlc.json`, `utf8`))
 
-const prefix = ","
+const prefix = "+"
 
 
 
@@ -13,38 +13,38 @@ client.on('message', message => {
           if (!message.content.startsWith(prefix)) return;
           var args = message.content.split(' ').slice(1);
           var argresult = args.join(' ');
-          if (message.author.id == 470451682417967116) return;
+          if (message.author.id == 535571590763773954) return;
 
 
         if (message.content.startsWith(prefix + 'playing')) {
-        if (message.author.id !== '465110270939889665') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+        if (message.author.id !== '535571590763773954') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
         client.user.setGame(argresult);
             message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
         } else
 
 
         if (message.content.startsWith(prefix + 'streem')) {
-        if (message.author.id !== '465110270939889665') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+        if (message.author.id !== '535571590763773954') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
         client.user.setGame(argresult, "http://twitch.tv/y04zgamer");
             message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
         } else
 
         if (message.content.startsWith(prefix + 'setname')) {
-        if (message.author.id !== '465110270939889665') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+        if (message.author.id !== '535571590763773954') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
           client.user.setUsername(argresult).then
               message.channel.sendMessage(`**${argresult}** : تم تغير الأسم`)
           return message.reply("**لا تستطيع تغير الأسم الا بعد ساعتين**");
         } else
 
         if (message.content.startsWith(prefix + 'setavatar')) {
-        if (message.author.id !== '465110270939889665') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+        if (message.author.id !== '535571590763773954') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
         client.user.setAvatar(argresult);
             message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
         } else
 
 
         if (message.content.startsWith(prefix + 'watching')) {
-        if (message.author.id !== '465110270939889665') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+        if (message.author.id !== '535571590763773954') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
             client.user.setActivity(argresult, {type : 'watching'});
          message.channel.sendMessage(`**${argresult}** : تم تغيير الووتشينق الى`)
         }
@@ -57,7 +57,7 @@ client.on("message", async message => {
     if(message.author.bot) return;
       let p = JSON.parse(fs.readFileSync("./prefixes.json", "utf8"));
     if(!p[message.guild.id]) p[message.guild.id] = {
-        prefix: ","
+        prefix: "+"
     }
       fs.writeFile("./prefixes.json", JSON.stringify(p), (err) => {
     if (err) console.log(err)
@@ -75,7 +75,7 @@ client.on("message", async message => {
 if (!message.channel.guild) return message.reply('**This command only for servers ❌**');
 const embed = new Discord.RichEmbed() 
       .setColor("#020000")
-      .setDescription(`
+      .setDescription(`تم الارسال على الخاص `)
 \`\`\`
 ╭━━╮╱╱╱╱╭╮
 ┃╭╮┃╱╱╱╭╯╰╮
@@ -130,7 +130,7 @@ const embed = new Discord.RichEmbed()
 
 
 
-//By: osama gmt
+//By: Youssef
 
 
 const ms = require("ms");
