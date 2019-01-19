@@ -470,6 +470,8 @@ Best Bot Of Games
 البوت يعمل 24 ساعه
 في مضاد الجحفله + مضاد سبام و نشر روابط + سرعه قوية الاستجابة
 افضل بوت العاب
+رابط اضافة البوت الى سيرفرك :
+https://discordapp.com/api/oauth2/authorize?client_id=536107644939927552&permissions=0&scope=bot
 **
         ***__General orders__***
 **
