@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
-const devs = ['497482507273502720','474200581163057153'];
+const devs = ['535571590763773954','535571590763773954'];
 const adminprefix = "#";
-const prefix = "#";
+const prefix = "+";
 const db = require('quick.db');
 const client = new Discord.Client();   
 const giphy = require('giphy-api')();    
@@ -463,10 +463,13 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
     let pages = [`
 ***__وصف عن البوت__***
 **
-:gem:  البوت فيه كثير ميزات حلوة و جميلة
- ا:rocket: البوت يعمل 24 ساعه 
-بوت يمتلك مضد جحفله (هكر) +سبام+نشر روابط+مضاد سب :gear: 
-اعمل روم باسم welcome للحصول علي الترحيب والايدي
+Welcome To Star Bot Best Bot Arabic
+Bot Works 24 hours
+Bot Anti-hacker + Anti-spam + Best Fast
+Best Bot Of Games
+البوت يعمل 24 ساعه
+في مضاد الجحفله + مضاد سبام و نشر روابط + سرعه قوية الاستجابة
+افضل بوت العاب
 **
         ***__General orders__***
 **
@@ -2960,7 +2963,7 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('!!bc')){
- if (message.author.id !== '474200581163057153') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+ if (message.author.id !== '535571590763773954') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
 message.channel.sendMessage('جار ارسال الرسالة |✅')
 client.users.forEach(m =>{
 m.sendMessage(args)
