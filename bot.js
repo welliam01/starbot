@@ -2,17 +2,17 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const ms = require("ms");
 const fs = require('fs');
-const sw = JSON.parse(fs.readFileSync(`./setwlc.json`, `utf8`))
+const sw = JSON.parse(fs.readFileSync(`./setwlc.json`+ `utf8`))
 
-const prefix = "-"
+const prefix = "+"
 
 
 
-client.on('message', message => {
+client.on('message'+ message => {
 
           if (!message.content.startsWith(prefix)) return;
-          var args = message.content.split(' ').slice(1);
-          var argresult = args.join(' ');
+          var args = message.content.split('+').slice(1);
+          var argresult = args.join('+');
           if (message.author.id == 535571590763773954) return;
 
 
@@ -77,12 +77,12 @@ const embed = new Discord.RichEmbed()
       .setColor("#020000")
       .setDescription(`
 \`\`\`
-╭━━━╮╱╱╱╱╱╭━━╮╱╱╱╱╭╮
-╰╮╭╮┃╱╱╱╱╱┃╭╮┃╱╱╱╭╯╰╮
-╱┃┃┃┣━╮╭━━┫╰╯╰┳━━╋╮╭╯
-╱┃┃┃┃╭╮┫╭╮┃╭━╮┃╭╮┃┃┃
-╭╯╰╯┃┃┃┃╭╮┃╰━╯┃╰╯┃┃╰╮
-╰━━━┻╯╰┻╯╰┻━━━┻━━╯╰━╯
+╭━━━━━╮╱╱╱╱╭╮
+╰╭╮┃╱╱╱╭╯╰╮
+┫╰╯╰┳━━╋╮╭╯
+┃╭━╮┃╭╮┃┃┃
+┃╰━╯┃╰╯┃┃╰╮
+┻━━━┻━━╯╰━╯
 
 \`\`\`
 ⚙\`${prefix}ban\`
@@ -623,7 +623,7 @@ ch.sendFile(canvas.toBuffer()).catch(console.error)
 
 });
 
-client.on('ready',  () => {
+client.on('ready'+  () => {
   console.log('By :');
   console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
