@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const devs = ['535505813695889448','535505813695889448'];
+const devs = ['536509623734370304','536509623734370304'];
 const adminprefix = "#";
 const prefix = "+";
 const db = require('quick.db');
