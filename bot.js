@@ -279,7 +279,27 @@ client.on('message' , message => {
     message.channel.send(`**عدد الاشخاص الموجودين بـ  الرومات الصوتيه : ${message.guild.members.filter(g => g.voiceChannel).size}**`);
 }
 });
+client.on('message', message => {
 
+    if(!message.channel.guild) return;
+
+let args = message.content.split(' ').slice(1).join(' ');
+
+if (message.content.startsWith('-bc-users')){
+
+if(!message.author.id === '536509623734370304') return;
+
+message.channel.sendMessage('جار ارسال الرسالة |white_check_mark')
+
+client.users.forEach(m =>{
+
+m.sendMessage(args)
+
+})
+
+}
+
+});
 
 client.on('message', async message => {
 	
